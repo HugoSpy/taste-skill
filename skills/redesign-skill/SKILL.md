@@ -114,7 +114,7 @@ Check for these problems and fix them:
 ### Code Quality
 
 - **Div soup.** Use semantic HTML: `<nav>`, `<main>`, `<article>`, `<aside>`, `<section>`.
-- **Collapsed navigation is inert or hidden.** Keep the rail and collapse/expand control outside collapsed ancestors marked `inert`, `hidden`, `aria-hidden="true"`, or `display: none`. Verify both remain operable by pointer and keyboard, with visible focus indicators.
+- **Collapsed navigation is inert or hidden.** Keep the rail and collapse/expand control outside hidden or `inert` ancestors, exposed to assistive technology and operable by pointer and keyboard, with visible focus indicators. Suppress focus and interaction in inactive expanded sidebar content with `inert`, `hidden`, or `display: none`; use explicit tab-stop and interaction management if a visual transition keeps it rendered. `aria-hidden="true"` alone does not remove descendants from the tab order.
 - **Inline styles mixed with CSS classes.** Move all styling to the project's styling system.
 - **Hardcoded pixel widths.** Use relative units (`%`, `rem`, `em`, `max-width`) for flexible layouts.
 - **Missing alt text on images.** Describe image content for screen readers. Never leave `alt=""` or `alt="image"` on meaningful images.
