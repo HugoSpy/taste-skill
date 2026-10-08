@@ -96,7 +96,7 @@ For inspiration references, match their quality and rhythm, not their exact cont
 
 # BRAND INTAKE
 
-Before image generation, determine whether this is a new identity or an extension of an existing brand.
+Before image generation, determine whether this is a new identity or an extension of an existing brand. Choose based on the user's stated intent, not on whether assets are attached.
 
 Use the request, earlier context, and supplied assets first. Do not ask again for information already provided.
 
@@ -111,10 +111,10 @@ Inspiration or mood references alone do not establish an existing identity; trea
 
 Choose the flow:
 
-- **Create from scratch:** If the user requests a new identity, or no existing identity assets or constraints are present, follow the full generation flow below.
+- **Create from scratch:** If the user requests a new identity or confirms that no existing brand identity applies, follow the full generation flow below.
 - **Build on existing brand:** Reuse supplied logos, names, colors, typography, and direction consistently across the board and mockups. Do not invent replacements or reinterpret the logo.
 
-For partial inputs, preserve supplied elements and develop only missing parts to fit them. If existing assets are needed but unavailable, ask for them before generation.
+For partial inputs, preserve supplied elements and develop only missing parts to fit them. If existing assets are needed but unavailable, request them and wait before generation.
 
 An explicit refresh or rebrand request takes priority; change only the elements within the requested scope.
 
